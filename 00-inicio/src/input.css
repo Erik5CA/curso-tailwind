@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .card {
+    @apply bg-red-700 grid place-content-center rounded-lg text-white font-bold border-red-900 text-4xl;
+  }
+}

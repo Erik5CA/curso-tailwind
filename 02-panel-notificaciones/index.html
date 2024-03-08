@@ -1,13 +1,233 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/index.css" />
     <title>Vite App</title>
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/main.js"></script>
+    <div
+      class="flex justify-between my-1 mx-3 p-5 items-center md:w-[760px] md:mx-auto"
+    >
+      <h3 class="text-2xl font-bold">
+        Notifications
+        <span
+        id="num-notifi"
+          class="bg-primary-Blue text-neutral-White inline-block text-center w-8 rounded-md"
+        >
+          3
+        </span>
+      </h3>
+      <p
+        id="mark-all"
+        class="text-neutral-DarkGrayishBlue text-sm cursor-pointer hover:text-primary-Blue"
+      >
+        Mark all as read
+      </p>
+    </div>
+
+    <!-- POST -->
+    <div
+      class="flex bg-neutral-VeryLightGrayishBlue rounded-lg p-4 gap-4 cursor-pointer mb-3 mx-3 md:w-[760px] md:mx-auto"
+    >
+      <img
+        class="w-12 h-12"
+        src="./src/assets/images/avatar-mark-webber.webp"
+        alt="Avatar Mark Webber"
+      />
+      <div>
+        <p>
+          <span
+            class="text-neutral-VeryDarkBlue font-bold hover:text-primary-Blue"
+            >Mark Webber</span
+          >
+          <span class="text-neutral-GrayishBlue font-semibold"
+            >reacted to your recent post
+          </span>
+          <span
+            class="text-neutral-DarkGrayishBlue font-semibold hover:text-primary-Blue"
+            >My first tournament today!</span
+          >
+          <span
+            class="not-read bg-red-600 rounded-full inline-block ml-2 w-2 h-2"
+          ></span>
+        </p>
+        <p class="text-neutral-GrayishBlue">1m ago</p>
+      </div>
+    </div>
+
+    <div
+      class="flex bg-neutral-VeryLightGrayishBlue rounded-lg p-4 gap-4 cursor-pointer mb-3 mx-3 md:w-[760px] md:mx-auto"
+    >
+      <img
+        class="w-12 h-12"
+        src="./src/assets/images/avatar-angela-gray.webp"
+        alt="Avatar Mark Webber"
+      />
+      <div>
+        <p>
+          <span
+            class="text-neutral-VeryDarkBlue font-bold hover:text-primary-Blue"
+            >Angela Gray</span
+          >
+          <span class="text-neutral-GrayishBlue font-semibold"
+            >followed you
+          </span>
+          <span
+            class="not-read bg-red-600 rounded-full inline-block ml-2 w-2 h-2"
+          ></span>
+        </p>
+        <p class="text-neutral-GrayishBlue">5m ago</p>
+      </div>
+    </div>
+
+    <div
+      class="flex bg-neutral-VeryLightGrayishBlue rounded-lg p-4 gap-4 cursor-pointer mb-3 mx-3 md:w-[760px] md:mx-auto"
+    >
+      <img
+        class="w-12 h-12"
+        src="./src/assets/images/avatar-jacob-thompson.webp"
+        alt="Avatar Mark Webber"
+      />
+      <div>
+        <p>
+          <span
+            class="text-neutral-VeryDarkBlue font-bold hover:text-primary-Blue"
+            >Jacob Thompson</span
+          >
+          <span class="text-neutral-GrayishBlue font-semibold"
+            >has joined your group
+          </span>
+          <span class="text-primary-Blue font-semibold hover:text-primary-Blue"
+            >Chess Club</span
+          >
+          <span
+            class="not-read bg-red-600 rounded-full inline-block ml-2 w-2 h-2"
+          ></span>
+        </p>
+        <p class="text-neutral-GrayishBlue">1 day ago</p>
+      </div>
+    </div>
+
+    <div
+      class="flex d bg-neutral-VeryLightGrayishBlue rounded-lg p-4 gap-4 cursor-pointer mb-3 mx-3 md:w-[760px] md:mx-auto"
+    >
+      <img
+        class="w-12 h-12"
+        src="./src/assets/images/avatar-rizky-hasanuddin.webp"
+        alt="Avatar Mark Webber"
+      />
+      <div>
+        <p>
+          <span
+            class="text-neutral-VeryDarkBlue font-bold hover:text-primary-Blue"
+            >Rizky Hasanuddin</span
+          >
+          <span class="text-neutral-GrayishBlue font-semibold"
+            >sent you a private message
+          </span>
+          <span class=""></span>
+        </p>
+        <p class="text-neutral-GrayishBlue">5 days ago</p>
+        <div
+          class="text-neutral-GrayishBlue border-2 border-neutral-LightGrayishBlue2 rounded-md p-3 mt-2 hover:bg-neutral-LightGrayishBlue2"
+        >
+          <p class="">
+            Hello, thanks for setting up the Chess Club. I've been a member for
+            a few weeks now and I'm already having lots of fun and improving my
+            game.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="flex justify-between items-center bg-neutral-VeryLightGrayishBlue rounded-lg cursor-pointer mb-3 mx-3 md:w-[760px] md:mx-auto"
+    >
+      <div class="flex p-4 gap-4">
+        <img
+          class="w-12 h-12"
+          src="./src/assets/images/avatar-kimberly-smith.webp"
+          alt="Avatar Mark Webber"
+        />
+        <div>
+          <p>
+            <span
+              class="text-neutral-VeryDarkBlue font-bold hover:text-primary-Blue"
+              >Kimberly Smith</span
+            >
+            <span class="text-neutral-GrayishBlue font-semibold"
+              >commented on your picture
+            </span>
+            <span
+              class="text-neutral-DarkGrayishBlue font-semibold hover:text-primary-Blue"
+            ></span>
+            <span class=""></span>
+          </p>
+          <p class="text-neutral-GrayishBlue">1 week ago</p>
+        </div>
+      </div>
+      <img
+        class="w-10 h-10 mr-3"
+        src="./src/assets/images/image-chess.webp"
+        alt=""
+      />
+    </div>
+
+    <div
+      class="flex bg-neutral-VeryLightGrayishBlue rounded-lg p-4 gap-4 cursor-pointer mb-3 mx-3 md:w-[760px] md:mx-auto"
+    >
+      <img
+        class="w-12 h-12"
+        src="./src/assets/images/avatar-nathan-peterson.webp"
+        alt="Avatar Mark Webber"
+      />
+      <div>
+        <p>
+          <span
+            class="text-neutral-VeryDarkBlue font-bold hover:text-primary-Blue"
+            >Nathan Peterson</span
+          >
+          <span class="text-neutral-GrayishBlue font-semibold"
+            >reacted to your recent post
+          </span>
+          <span
+            class="text-neutral-DarkGrayishBlue font-semibold hover:text-primary-Blue"
+            >5 end-game strategies to increase your win rate
+          </span>
+          <span class=""></span>
+        </p>
+        <p class="text-neutral-GrayishBlue">2 weeks ago</p>
+      </div>
+    </div>
+
+    <div
+      class="flex bg-neutral-VeryLightGrayishBlue rounded-lg p-4 gap-4 cursor-pointer mb-3 mx-3 md:w-[760px] md:mx-auto"
+    >
+      <img
+        class="w-12 h-12"
+        src="./src/assets/images/avatar-anna-kim.webp"
+        alt="Avatar Mark Webber"
+      />
+      <div>
+        <p>
+          <span
+            class="text-neutral-VeryDarkBlue font-bold hover:text-primary-Blue"
+            >Anna Kim</span
+          >
+          <span class="text-neutral-GrayishBlue font-semibold"
+            >left the group
+          </span>
+          <span class="text-primary-Blue font-semibold hover:text-primary-Blue"
+            >Chess Club
+          </span>
+          <span class=""></span>
+        </p>
+        <p class="text-neutral-GrayishBlue">2 weeks ago</p>
+      </div>
+    </div>
+    <script src="./main.js"></script>
   </body>
 </html>

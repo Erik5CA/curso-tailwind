@@ -3,11 +3,15 @@ import CardNew from "./CardNew";
 
 export default function HomeGrid() {
   return (
-    <section className="mt-4 grid grid-cols-1 grid-rows-6 bg-slate-400 gap-4">
-      <div className="bg-purple-400">
-        <img src={imageMobile} alt="imagen de puzzle" />
+    <section className="mt-4 grid grid-cols-1 grid-rows-6 border border-red-600 gap-2 md:grid-cols-2 md:grid-rows-4 xl:grid-cols-3 xl:grid-rows-3">
+      <div className=" h-[380px] border border-blue-800 md:col-span-2 xl:col-span-2 ">
+        <img
+          className="h-[100%] w-[100%]"
+          src={imageMobile}
+          alt="imagen de puzzle"
+        />
       </div>
-      <div className="bg-purple-400 h-auto">
+      <div className="border border-blue-800 md:col-span-2">
         <h2 className="text-5xl font-bold">The Bright Future of Web 3.0?</h2>
         <div>
           <p className="text-lg text-neutral-dark-grayish-blue my-4">
@@ -20,12 +24,10 @@ export default function HomeGrid() {
           </button>
         </div>
       </div>
-      <div className="bg-purple-400 row-span-2 p-5 flex flex-col h-[80%] self-center">
-        <h3 className="text-primary-soft-orange font-bold text-4xl h-[10%]">
-          New
-        </h3>
-        <div className="h-[90%] flex flex-col justify-between">
-          <div className="h-[33%] py-6">
+      <div className="border border-blue-800 row-span-2 xl:col-start-3 xl:row-start-1">
+        <h3 className="text-primary-soft-orange font-bold text-4xl">New</h3>
+        <div className=" flex flex-col justify-between">
+          <div className=" py-6">
             <h3 className="text-2xl text-white font-bold">
               Hydrogen VS Electric Cars
             </h3>
@@ -33,7 +35,7 @@ export default function HomeGrid() {
               Will hydrogen-fueled cars ever catch up to EVs?
             </p>
           </div>
-          <div className="h-[33%] py-6 border-y">
+          <div className=" py-6 border-y">
             <h3 className="text-2xl text-white font-bold">
               The Downsides of AI Artistry
             </h3>
@@ -42,7 +44,7 @@ export default function HomeGrid() {
               generation?
             </p>
           </div>
-          <div className="h-[33%] py-6">
+          <div className="py-6">
             <h3 className="text-2xl text-white font-bold">
               Is VC Funding Drying Up?
             </h3>
@@ -53,7 +55,7 @@ export default function HomeGrid() {
           </div>
         </div>
       </div>
-      <div className="bg-purple-400 row-span-2  flex flex-col h-[80%] justify-between">
+      <div className=" xl:flex border border-blue-800 row-span-2 xl:col-span-3">
         <CardNew />
         <CardNew />
         <CardNew />

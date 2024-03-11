@@ -15,35 +15,35 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="flex my-4 w-[100%] justify-between items-center">
+    <nav className="flex my-5 w-[100%] justify-between items-center">
       <img className="w-10 h-7" src={logo} alt="logo" />
-      <div className=" gap-7 hidden xl:flex">
+      <div className=" gap-7 text-xs hidden xl:flex xl:text-xl">
         <a
-          className="text-neutral-grayish-blue text-xs hover:text-primary-soft-red"
+          className="text-neutral-grayish-blue  hover:text-primary-soft-red"
           href="#"
         >
           Home
         </a>
         <a
-          className="text-neutral-grayish-blue text-xs hover:text-primary-soft-red"
+          className="text-neutral-grayish-blue hover:text-primary-soft-red"
           href="#"
         >
           New
         </a>
         <a
-          className="text-neutral-grayish-blue text-xs hover:text-primary-soft-red"
+          className="text-neutral-grayish-blue  hover:text-primary-soft-red"
           href="#"
         >
           Popular
         </a>
         <a
-          className="text-neutral-grayish-blue text-xs hover:text-primary-soft-red"
+          className="text-neutral-grayish-blue  hover:text-primary-soft-red"
           href="#"
         >
           Trending
         </a>
         <a
-          className="text-neutral-grayish-blue text-xs hover:text-primary-soft-red"
+          className="text-neutral-grayish-blue  hover:text-primary-soft-red"
           href="#"
         >
           Categories
